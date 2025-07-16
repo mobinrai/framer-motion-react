@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    --color-primary:rgb(100,0,123);
+    --font-quicksand:"Quicksand", sans-serif;
+}
+
+:root{
+    --bg-radial-gradient: radial-gradient(circle, rgba(100,0,123,1) 0%, rgba(62,20,86,1) 100%);
+}
+
+@layer base{
+    body{
+        background: rgb(100,0,123);
+        background: var(--bg-radial-gradient);
+        @apply mx-auto max-w-7xl py-5;
+        overflow: hidden;
+    }
+}
+
+@layer components{
+    /* repeacted css classes */
+    .btn{
+        @apply bg-transparent text-lg border-2 rounded-md border-white;
+    }
+    .page-header{
+        @apply capitalize border-b text-white text-3xl pb-4;
+    }
+}
