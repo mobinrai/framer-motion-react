@@ -5,6 +5,7 @@
 @theme {
     --color-primary:rgb(100,0,123);
     --font-quicksand:"Quicksand", sans-serif;
+    --color-border-bottom-color:rgba(255,255,255,0.2);
 }
 
 :root{
@@ -26,6 +27,6 @@
         @apply bg-transparent text-lg border-2 rounded-md border-white;
     }
     .page-header{
-        @apply capitalize border-b text-white text-3xl pb-4;
+        @apply capitalize border-b border-border-bottom-color text-white text-3xl pb-4;
     }
 }
