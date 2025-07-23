@@ -55,8 +55,10 @@ pizzajoint/
 
 # ✅ Setup Instructions
 ## Clone the project
-
-Install dependencies
+```bash
+git clone https://github.com/mobinrai/framer-motion-react.git
+```
+## Install dependencies
 
 ```bash
 npm install
